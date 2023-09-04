@@ -88,9 +88,9 @@ body {
     background-color: magenta;
 } */
 
-.debug .row {
+/* .debug .row {
    border: 1px dotted rgb(255, 255, 255);
-}
+} */
 
 .debug [class^='col-'] {
     padding: 10px;
@@ -117,7 +117,7 @@ body {
 /* DEBUG PAGE CONTENT A  */
 
 .debug .page-content-a {
-    background-color: darkseagreen;
+    background-color: rgb(241, 241, 241);
 }
 
 .debug .page-content-a .row {
@@ -136,4 +136,14 @@ body {
 
 .debug .page-content-a .small-content {
     background-color: bisque;
+}
+
+/* DEBUG PAGE CONTENT A INVERTED  */
+
+.debug .page-content-a.inverted {
+    background-color: rgb(143, 170, 188);
+}
+
+.debug .page-content-a.inverted .big-content {
+    order: 1;
 }
