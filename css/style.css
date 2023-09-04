@@ -4,6 +4,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    
 }
 
 li, ul, menu {
@@ -12,6 +13,16 @@ li, ul, menu {
 
 
 /* LAYOUT RULES */
+
+body {
+    font-family: sans-serif;
+    color: white;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
 
 .page-content {
     display: flex;
@@ -28,12 +39,39 @@ li, ul, menu {
     flex-wrap: wrap;
 }
 
+.col-3 {
+    flex: calc(100% / 4);
+}
+
+.col-6 {
+    flex: calc(100% / 2);
+}
+
+/* HEADER  */
+
+.header-logo {
+    text-align: left;
+}
+
+.header-menu {
+    text-align: center;
+}
+
+.header-menu li {
+    display: inline-block;
+}
+
+.header-login {
+    text-align: right;
+}
+
+
 
 /* DEBUG RULES */
 
 .debug .page-header,
 .debug .page-footer {
-    min-height: 80px;
+    min-height: 50px;
     padding: 10px;
     background-color: cyan;
 }
@@ -41,4 +79,15 @@ li, ul, menu {
 .debug .main-content {
     padding: 10px;
     background-color: magenta;
+}
+
+.debug .row {
+    background-color: aquamarine;
+}
+
+.debug [class^='col-'] {
+    padding: 10px;
+    background-color: darkcyan;
+    border: 1px dotted rgb(255, 255, 255);
+    
 }
