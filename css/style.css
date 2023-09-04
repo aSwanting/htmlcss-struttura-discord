@@ -43,6 +43,10 @@ body {
     flex-basis: calc(100% / 4);
 }
 
+.col-4 {
+    flex-basis: calc(100% / 3);
+}
+
 .col-6 {
     flex-basis: calc(100% / 2);
 }
@@ -84,9 +88,9 @@ body {
     background-color: magenta;
 } */
 
-/* .debug .row {
-    background-color: aquamarine;
-} */
+.debug .row {
+   border: 1px dotted rgb(255, 255, 255);
+}
 
 .debug [class^='col-'] {
     padding: 10px;
@@ -94,16 +98,42 @@ body {
     border: 1px dotted rgb(255, 255, 255);    
 }
 
+/* DEBUG PAGE HERO */
+
 .debug .page-hero {
     background-color: blue;
 }
 
 .debug .page-hero .row {
-    padding: 20px;
+    padding-block: 20px;
     justify-content: center;
 }
 
 .debug .hero-image {
     background-color: blueviolet;
     height: 250px;
+}
+
+/* DEBUG PAGE CONTENT A  */
+
+.debug .page-content-a {
+    background-color: darkseagreen;
+}
+
+.debug .page-content-a .row {
+    padding-block: 20px;
+    justify-content: center;
+}
+
+.debug .big-content,
+.debug .small-content {
+    height: 250px;
+}
+
+.debug .page-content-a .big-content {
+    background-color: aquamarine;
+}
+
+.debug .page-content-a .small-content {
+    background-color: bisque;
 }
