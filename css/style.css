@@ -20,7 +20,7 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -53,6 +53,10 @@ body {
 
 .col-8 {
     flex-basis: calc(100% / 1.5);
+}
+
+.col-12 {
+    flex-basis: 100%;
 }
 
 /* HEADER  */
@@ -146,4 +150,20 @@ body {
 
 .debug .page-content-a.inverted .big-content {
     order: 1;
+}
+
+/* PAGE ANTIHERO */
+
+.debug .page-antihero {
+    background-color: rgb(143, 170, 188);
+}
+
+.debug .page-antihero .row {
+    padding-block: 20px;
+    justify-content: center;
+}
+
+.debug .antihero-image {
+    background-color: rgb(32, 100, 155);
+    height: 400px;
 }
